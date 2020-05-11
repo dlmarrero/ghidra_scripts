@@ -5,7 +5,7 @@
 
 ## Scripts
 ### AutoRebase.py
-Key:  `Ctrl+Shift+B`
-Menu: `Tools -> Helpers -> Auto-Rebase`
-Desc: Automatically rebases a relocatable ELF to the default used by GDB
+| Script | Desc | Key | Menu |
+|--------|------|-----|------|
+| AutoRebase.py | Automatically rebases a relocatable ELF to the default used by GDB | Ctrl+Shift+B | Tools -> Helpers -> Auto-Rebase |
 
