@@ -17,7 +17,7 @@ def main():
         return
 
     # Defaults are the same as gdb
-    DEFAULT_X86 = "0x400000"
+    DEFAULT_X86 = "0x56555000"
     DEFAULT_X64 = "0x555555554000"
 
     # Select the base addr based on the arch
