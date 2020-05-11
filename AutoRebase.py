@@ -1,4 +1,4 @@
-#Automatically rebase a relocatable ELF to a sane default
+#Automatically rebase a relocatable ELF to default base addr used by gdb
 #@author Davy L. Marrero
 #@category Helpers
 #@keybinding ctrl shift B
