@@ -4,7 +4,6 @@
 2. In the Script Manager window (`Window -> Script Manager`), checking the `In Tool` checkbox will add any keyboard or menu bindings
 
 ## Scripts
-### AutoRebase.py
 | Script | Description | Key | Menu |
 |--------|-------------|-----|------|
 | AutoRebase.py | Automatically rebases a relocatable ELF to the default used by GDB | Ctrl+Shift+B | Tools -> Helpers -> Auto-Rebase |
