@@ -30,7 +30,7 @@ def main():
         raise Exception('Unknown architecture: ' + arch)
 
     # Rebase the program
-    new_base = currentProgram.getAddressFactory().getAddress(addr)
+    new_base = getAddressFactory().getAddress(addr)
     currentProgram.setImageBase(new_base, True)
 
     print("Rebased relocatable ELF to: " + str(new_base))
