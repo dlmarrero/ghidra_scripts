@@ -17,23 +17,22 @@ def main():
         return
 
     # Defaults are the same as gdb
-    DEFAULT_X86 = "0x56555000"
-    DEFAULT_X64 = "0x555555554000"
+    DEFAULT_X86 = 0x56555000
+    DEFAULT_X64 = 0x555555554000
 
     # Select the base addr based on the arch
     arch = str(currentProgram.getLanguageID())
     if '64' in arch:
-        addr = DEFAULT_X64
+        new_base = DEFAULT_X64
     elif '32' in arch:
-        addr = DEFAULT_X86
+        new_base = DEFAULT_X86
     else:
         raise Exception('Unknown architecture: ' + arch)
 
     # Rebase the program
-    new_base = getAddressFactory().getAddress(addr)
-    currentProgram.setImageBase(new_base, True)
+    currentProgram.setImageBase(toAddr(new_base), True)
 
-    print("Rebased relocatable ELF to: " + str(new_base))
+    print("Rebased relocatable ELF to: " + hex(new_base))
 
 
 main()
