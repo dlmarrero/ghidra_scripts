@@ -1,0 +1,10 @@
+--- _socket.py.BAK	2020-05-15 02:05:32.374358388 -0400
++++ _socket.py	2020-05-15 02:05:47.838606028 -0400
+@@ -782,6 +782,7 @@
+             self._can_write = True
+         else:
+             self.socket_type = UNKNOWN_SOCKET
++            self.incoming_head = None
+ 
+     def __repr__(self):
+         return "<_realsocket at {:#x} type={} open_count={} channel={} timeout={}>".format(
