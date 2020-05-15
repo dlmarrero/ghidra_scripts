@@ -8,7 +8,7 @@
 def main():
     BAD_FUNCS = ['gets', 'read', 'strcpy', 'strncpy', 'strncat', 'strcat', 
                 'memcpy', 'memmove', 'scanf', 'sscanf', 'sprintf', 'fgets', 
-                'readline']
+                'readline', 'system']
     
     st = getCurrentProgram().getSymbolTable()
 
